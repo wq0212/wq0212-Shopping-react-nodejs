@@ -1,0 +1,21 @@
+{
+  "name": "shopping-react-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && nodemon server",
+    "client": "cd client && npm start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "create-react-app": "^5.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "react-router-dom": "^6.3.0"
+  }
+}
